@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "255093729487",
+    "firebase_url": "https://ekstremeat.firebaseio.com",
+    "project_id": "ekstremeat",
+    "storage_bucket": "ekstremeat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255093729487:android:e18927cf3bb67498b86fba",
+        "android_client_info": {
+          "package_name": "com.kotlin.ekstremeat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255093729487-ojpj4lm7pgie0mjlk13dhop19d5qmscm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kotlin.ekstremeat",
+            "certificate_hash": "afbc64073544541e5f626f3ea68bb1d33015c856"
+          }
+        },
+        {
+          "client_id": "255093729487-if5laeauhfierqk9bchc5n0i6mbbt979.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAprUQ_UnEge7ianbfTbnPHSU6-4cGQVQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255093729487-if5laeauhfierqk9bchc5n0i6mbbt979.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
