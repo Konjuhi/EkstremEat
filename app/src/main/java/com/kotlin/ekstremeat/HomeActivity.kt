@@ -1,7 +1,9 @@
 package com.kotlin.ekstremeat
 
 import android.os.Bundle
+import android.util.EventLog
 import android.view.Menu
+import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -13,6 +15,10 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.kotlin.ekstremeat.EventBus.CategoryClick
+import org.greenrobot.eventbus.EventBus
+import org.greenrobot.eventbus.Subscribe
+import org.greenrobot.eventbus.ThreadMode
 
 class HomeActivity : AppCompatActivity() {
 
@@ -52,5 +58,28 @@ class HomeActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    //Event Bus
+
+    override fun onStart() {
+        super.onStart()
+        EventBus.getDefault().register(this)
+    }
+
+    override fun onStop() {
+        EventBus.getDefault().unregister(this)
+        super.onStop()
+    }
+
+    //UI uptades must run on MainThread
+    @Subscribe(sticky = true,threadMode = ThreadMode.MAIN)
+    fun onCategorySelected(event: CategoryClick)
+    {
+        if(event.isSuccess)
+        {
+            //Toast.makeText(this,"Click to " + event.category.name,Toast.LENGTH_SHORT).show()
+            findNavController(R.id.nav_host_fragment).navigate(R.id.nav_food_lsit)
+        }
     }
 }

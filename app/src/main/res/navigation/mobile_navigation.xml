@@ -40,4 +40,9 @@
         android:name="com.kotlin.ekstremeat.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_food_lsit"
+        android:name="com.kotlin.ekstremeat.ui.foodList.FoodListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" />
 </navigation>

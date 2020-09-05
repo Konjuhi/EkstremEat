@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:text="Best Deals"
+            android:text ="Best Deals"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="8dp"
             android:fontFamily="@font/brandon_medium"/>
@@ -63,10 +63,5 @@
     </LinearLayout>
 
 </LinearLayout>
-
-
-
-
-
 
 </RelativeLayout>

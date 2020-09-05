@@ -40,7 +40,7 @@ class MenuFragment : Fragment() {
 
         initViews(root)
 
-        menuViewModel.getMessageErro().observe(this, Observer {
+        menuViewModel.getMessageError().observe(this, Observer {
             Toast.makeText(context,it,Toast.LENGTH_SHORT).show()
         })
         menuViewModel.getCategoryList().observe(this, Observer {
@@ -69,7 +69,7 @@ class MenuFragment : Fragment() {
                return  if(adapter != null)
                {
                    when(adapter!!.getItemViewType(position)){
-                       com.kotlin.ekstremeat.Common.Common.DEFAUT_COLUMN_COUNT ->1
+                       com.kotlin.ekstremeat.Common.Common.DEFAULT_COLUMN_COUNT ->1
                        com.kotlin.ekstremeat.Common.Common.FULL_WIDTH_COLUMN ->2
                        else -> -1
                    }

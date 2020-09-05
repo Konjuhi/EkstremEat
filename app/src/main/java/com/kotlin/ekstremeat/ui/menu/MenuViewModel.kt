@@ -40,7 +40,7 @@ class MenuViewModel : ViewModel(), ICategoryCallbackListener {
         return categoriesListMutable!!
     }
 
-    fun getMessageErro():MutableLiveData<String>{
+    fun getMessageError():MutableLiveData<String>{
         return messageError
     }
 
