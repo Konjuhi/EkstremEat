@@ -36,10 +36,10 @@
         tools:layout="@layout/fragment_category" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.kotlin.ekstremeat.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_food_detail"
+        android:name="com.kotlin.ekstremeat.ui.fooddetail.FoodDetailFragment"
+        android:label="@string/menu_food_detail"
+        tools:layout="@layout/fragment_food_detail" />
     <fragment
         android:id="@+id/nav_food_lsit"
         android:name="com.kotlin.ekstremeat.ui.foodList.FoodListFragment"

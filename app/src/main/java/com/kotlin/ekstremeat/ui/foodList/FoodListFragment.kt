@@ -7,16 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.view.animation.LayoutAnimationController
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kotlin.ekstremeat.Common.Common
-import com.kotlin.ekstremeat.MyFoodListAdapter
+import com.kotlin.ekstremeat.Adapter.MyFoodListAdapter
 
 import com.kotlin.ekstremeat.R
+
 
 /**
  * A simple [Fragment] subclass.
@@ -28,7 +28,7 @@ class FoodListFragment : Fragment() {
     var recycler_food_list : RecyclerView?=null
     var layoutAnimationController:LayoutAnimationController?=null
 
-    var adapter :MyFoodListAdapter?=null
+    var adapter : MyFoodListAdapter?=null
 
 
 
@@ -64,5 +64,4 @@ class FoodListFragment : Fragment() {
         (activity as AppCompatActivity).supportActionBar!!.title = Common.categorySelected!!.name
 
     }
-
 }

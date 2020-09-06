@@ -1,9 +1,11 @@
 package com.kotlin.ekstremeat.Common
 
 import com.kotlin.ekstremeat.Model.CategoryModel
+import com.kotlin.ekstremeat.Model.FoodModel
 import com.kotlin.ekstremeat.Model.UserModel
 
 object Common {
+    var foodSelected:FoodModel? =null
     var categorySelected:CategoryModel?=null
     val CATEGORY_REF: String = "Category"
     val FULL_WIDTH_COLUMN: Int =1
