@@ -5,6 +5,7 @@ import com.kotlin.ekstremeat.Model.FoodModel
 import com.kotlin.ekstremeat.Model.UserModel
 
 object Common {
+    val COMMENT_REF: String = "Comment"
     var foodSelected:FoodModel? =null
     var categorySelected:CategoryModel?=null
     val CATEGORY_REF: String = "Category"

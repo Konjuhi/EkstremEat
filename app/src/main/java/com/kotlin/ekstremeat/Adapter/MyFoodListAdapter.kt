@@ -32,10 +32,10 @@ RecyclerView.Adapter<MyFoodListAdapter.MyViewHolder>(){
         holder.txt_food_price!!.text=foodList[position].price.toString()
 
         //Event
-
         holder.setListener(object:IRecyclerItemClickListener{
             override fun onItemClick(view: View, pos: Int) {
                 Common.foodSelected = foodList[pos]
+                Common.foodSelected!!.key = pos.toString()
                 EventBus.getDefault().postSticky(FoodItemClick(true,foodList[pos]))
             }
 
@@ -57,6 +57,7 @@ RecyclerView.Adapter<MyFoodListAdapter.MyViewHolder>(){
         var img_cart:ImageView?=null
 
         internal var listener: IRecyclerItemClickListener?=null
+
 
         fun setListener(listener: IRecyclerItemClickListener)
         {

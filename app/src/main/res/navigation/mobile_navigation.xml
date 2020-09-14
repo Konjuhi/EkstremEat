@@ -45,4 +45,9 @@
         android:name="com.kotlin.ekstremeat.ui.foodList.FoodListFragment"
         android:label="@string/menu_food_list"
         tools:layout="@layout/fragment_food_list" />
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.kotlin.ekstremeat.ui.comment.CommentFragment"
+        android:label="fragment_comment"
+        tools:layout="@layout/fragment_comment" />
 </navigation>
